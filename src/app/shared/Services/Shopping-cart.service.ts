@@ -27,6 +27,12 @@ export class ShoppingCartService{
       this.calcTotal();
     }
 
+    resetCart():void{
+      this.cartSubjet.next([]);
+      this.totalSubject.next(0);
+      this.quantitySubjet.next(0);
+    }
+
     private addToCart(product:Product): void{
       const isProductInCart =  this.products.find(({id}) => id == product.id)
 

@@ -15,8 +15,8 @@
     {{isDelivery}} - isDelivery?
     <mat-radio-group>
       <p>Send/Pick</p>
-      <mat-radio-button value="Pick" (change)="OnPickupOrDelivery(false)" checked>Pick</mat-radio-button>
-      <mat-radio-button value="send" (change)="OnPickupOrDelivery(true)">Send</mat-radio-button>
+      <mat-radio-button value="Pick" (change)="OnPickupOrDelivery(false)" >Pick</mat-radio-button>
+      <mat-radio-button value="send" (change)="OnPickupOrDelivery(true)"checked>Send</mat-radio-button>
     </mat-radio-group>
     <ng-container *ngIf="isDelivery; else ShowStores">
        <mat-form-field class="form_element">
@@ -50,7 +50,7 @@
   mat-raised-button
   color="primary"
   type="submit"
-  (click)="onSubmit()">
+  (click)="onSubmit(checkoutForm)">
     checkout
   </button>
 </div>

@@ -124,6 +124,56 @@
       "shippingAddress": "Av. de la Granvia de Hospitalet, 115",
       "city": "Barcelona",
       "pickup": true
+    },
+    {
+      "name": "csz",
+      "store": {
+        "id": 2,
+        "name": "Store Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "25/1/2023",
+      "pickup": false,
+      "id": 2
+    },
+    {
+      "name": "fes",
+      "shippingaddress": "sef",
+      "city": "sef",
+      "date": "25/1/2023",
+      "pickup": true,
+      "id": 3
+    },
+    {
+      "name": "dawd",
+      "shippingaddress": "fwaf",
+      "city": "frea",
+      "date": "25/1/2023",
+      "pickup": true,
+      "id": 4
+    },
+    {
+      "name": "awsd",
+      "shippingaddress": "wdasd",
+      "city": "chunga",
+      "date": "25/1/2023",
+      "isDelivery": true,
+      "id": 5
+    },
+    {
+      "name": "www",
+      "store": {
+        "id": 2,
+        "name": "Store Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "25/1/2023",
+      "isDelivery": false,
+      "id": 6
     }
   ],
   "detailsOrders": [
@@ -132,6 +182,76 @@
       "orderId": 1,
       "quantity": 10,
       "productName": "Product name"
+    },
+    {
+      "details": [
+        {
+          "ProductId": 1,
+          "productName": "Essential TypeScript 4: From Beginner to Pro",
+          "quantity": 1
+        },
+        {
+          "ProductId": 2,
+          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
+          "quantity": 1
+        }
+      ],
+      "orderID": 2,
+      "id": 2
+    },
+    {
+      "details": [
+        {
+          "ProductId": 6,
+          "productName": "CL3 Rated High-Speed 4K HDMI Cable - 6 Feet",
+          "quantity": 3
+        }
+      ],
+      "orderID": 3,
+      "id": 3
+    },
+    {
+      "details": [
+        {
+          "ProductId": 2,
+          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
+          "quantity": 6
+        }
+      ],
+      "orderID": 4,
+      "id": 4
+    },
+    {
+      "details": [
+        {
+          "ProductId": 1,
+          "productName": "Essential TypeScript 4: From Beginner to Pro",
+          "quantity": 1
+        },
+        {
+          "ProductId": 2,
+          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
+          "quantity": 1
+        }
+      ],
+      "orderID": 5,
+      "id": 5
+    },
+    {
+      "details": [
+        {
+          "ProductId": 1,
+          "productName": "Essential TypeScript 4: From Beginner to Pro",
+          "quantity": 1
+        },
+        {
+          "ProductId": 2,
+          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
+          "quantity": 3
+        }
+      ],
+      "orderID": 6,
+      "id": 6
     }
   ]
 }
