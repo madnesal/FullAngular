@@ -4,6 +4,7 @@ import { Product } from './Interface/product.interface';
 import { ShoppingCartService } from '../../shared/Services/Shopping-cart.service';
 import { ProductsService } from './services/products.service';
 
+
 @Component({
   selector: 'app-products',
   template: `

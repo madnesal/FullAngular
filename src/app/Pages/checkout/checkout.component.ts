@@ -11,7 +11,6 @@ import { ProductsService } from '../products/services/products.service';
 
 
 
-
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
