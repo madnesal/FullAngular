@@ -9,12 +9,14 @@ import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CartComponent } from './shared/components/Cart/cart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     RouterOutlet,
     RouterModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
