@@ -30,12 +30,13 @@ export class CheckoutComponent {
     private dataSvc: DataService,
     private shoppingcartSvc: ShoppingCartService,
     private router: Router,
-    private productSvc:ProductsService ){}
+    private productSvc:ProductsService)
+    {this.checkIfCartIsEmpty();}
   ngOnInit(): void {
     this.getStores();
     this.getDataCart();
     this.prepareDetails();
-  }
+    }
 
   OnPickupOrDelivery(value: boolean): void{
     this.isDelivery = value;
@@ -74,11 +75,13 @@ export class CheckoutComponent {
   private prepareDetails(): Details[]{
     const details : Details[] = [];
     this.cart.forEach((product:Product)=> {
-      const {id:ProductId ,name:productName,qty:quantity,stock} = product;
+      const {id:ProductId, name:productName, qty:quantity, stock} = product;
       const updateStock = (stock - quantity);
 
       this.productSvc.updateStock(ProductId,updateStock)
-      .pipe()
+      .pipe(
+        tap(() => details.push ({ ProductId, productName, quantity}))
+      )
       .subscribe()
 
       details.push({ ProductId, productName, quantity});
@@ -90,6 +93,18 @@ export class CheckoutComponent {
     this.shoppingcartSvc.cartAction$
     .pipe(
       tap ((products: Product[]) => this.cart = products)
+    )
+    .subscribe()
+  }
+
+  private checkIfCartIsEmpty():void{
+    this.shoppingcartSvc.cartAction$
+    .pipe(
+      tap((products: Product[]) =>{
+        if (Array.isArray(products)&& !products.length) {
+          this.router.navigate(['/products']);
+        }
+      })
     )
     .subscribe()
   }

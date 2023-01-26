@@ -31,6 +31,7 @@ export class ShoppingCartService{
       this.cartSubjet.next([]);
       this.totalSubject.next(0);
       this.quantitySubjet.next(0);
+      this.products=[];
     }
 
     private addToCart(product:Product): void{
