@@ -65,7 +65,7 @@
       "price": 5,
       "description": "En Hackeando del cerebro de tus compradores, Corti nos revela cómo muchas compañías crean productos digitales o procesos de venta capaces de conectar con la psicología del comprador.",
       "categoryId": 1,
-      "stock": 9
+      "stock": 7
     },
     {
       "id": 3,
@@ -73,7 +73,7 @@
       "price": 17,
       "description": "In this book, the reader will be able to focus on one concept of Angular in deep.",
       "categoryId": 1,
-      "stock": 9
+      "stock": 8
     },
     {
       "id": 4,
@@ -81,7 +81,7 @@
       "price": 19,
       "description": "Ideal for Android smartphones and tablets, and MIL cameras. SanDisk Memory Zone app for easy file management (Download and Installation Required).",
       "categoryId": 2,
-      "stock": 9
+      "stock": 6
     },
     {
       "id": 5,
@@ -89,7 +89,7 @@
       "price": 399,
       "description": "5K Video - Shoot stunning video with up to 5K resolution, perfect for maintaining detail even when zooming in",
       "categoryId": 2,
-      "stock": 9
+      "stock": 7
     },
     {
       "id": 6,
@@ -97,7 +97,7 @@
       "price": 7,
       "description": "HDMI A Male to A Male Cable: Supports Ethernet, 3D, 4K video and Audio Return Channel (ARC)",
       "categoryId": 2,
-      "stock": 8
+      "stock": 7
     },
     {
       "id": 7,
@@ -105,7 +105,7 @@
       "price": 32,
       "description": "The USB receiver is conveniently located in the box, top flap. This wireless keyboard and mouse feature Logitech Advanced 2.4GHz technology with a range of up to 10 metres.",
       "categoryId": 3,
-      "stock": 10
+      "stock": 9
     },
     {
       "id": 8,
@@ -118,28 +118,7 @@
   ],
   "orders": [
     {
-      "id": 1,
-      "name": "Dominicode",
-      "date": "01/12/1995",
-      "shippingAddress": "Av. de la Granvia de Hospitalet, 115",
-      "city": "Barcelona",
-      "pickup": true
-    },
-    {
-      "name": "fes",
-      "store": {
-        "id": 5,
-        "name": "Monmouth St",
-        "address": "11 Monmouth Street",
-        "city": "London",
-        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
-      },
-      "date": "26/1/2023",
-      "isDelivery": false,
-      "id": 2
-    },
-    {
-      "name": "uio",
+      "name": "UNO",
       "store": {
         "id": 1,
         "name": "Park Row at Beekman St",
@@ -149,155 +128,44 @@
       },
       "date": "26/1/2023",
       "isDelivery": false,
-      "id": 3
+      "id": 1
+    },
+    {
+      "name": "DOS",
+      "shippingaddress": "DOS",
+      "city": "DOS",
+      "date": "26/1/2023",
+      "isDelivery": true,
+      "id": 2
     }
   ],
   "detailsOrders": [
     {
-      "id": 1,
-      "orderId": 1,
-      "quantity": 10,
-      "productName": "Product name"
+      "details": [
+        {
+          "ProductId": 2,
+          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
+          "quantity": 1
+        }
+      ],
+      "orderID": 1,
+      "id": 1
     },
     {
       "details": [
         {
-          "ProductId": 1,
-          "productName": "Essential TypeScript 4: From Beginner to Pro",
+          "ProductId": 6,
+          "productName": "CL3 Rated High-Speed 4K HDMI Cable - 6 Feet",
           "quantity": 1
         },
         {
-          "ProductId": 2,
-          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
+          "ProductId": 7,
+          "productName": "Logitech MK270 Wireless Keyboard and Mouse Combo",
           "quantity": 1
         }
       ],
       "orderID": 2,
       "id": 2
-    },
-    {
-      "details": [
-        {
-          "ProductId": 6,
-          "productName": "CL3 Rated High-Speed 4K HDMI Cable - 6 Feet",
-          "quantity": 3
-        }
-      ],
-      "orderID": 3,
-      "id": 3
-    },
-    {
-      "details": [
-        {
-          "ProductId": 2,
-          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
-          "quantity": 6
-        }
-      ],
-      "orderID": 4,
-      "id": 4
-    },
-    {
-      "details": [
-        {
-          "ProductId": 1,
-          "productName": "Essential TypeScript 4: From Beginner to Pro",
-          "quantity": 1
-        },
-        {
-          "ProductId": 2,
-          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
-          "quantity": 1
-        }
-      ],
-      "orderID": 5,
-      "id": 5
-    },
-    {
-      "details": [
-        {
-          "ProductId": 1,
-          "productName": "Essential TypeScript 4: From Beginner to Pro",
-          "quantity": 1
-        },
-        {
-          "ProductId": 2,
-          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
-          "quantity": 3
-        }
-      ],
-      "orderID": 6,
-      "id": 6
-    },
-    {
-      "details": [
-        {
-          "ProductId": 2,
-          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
-          "quantity": 2
-        }
-      ],
-      "orderID": 7,
-      "id": 7
-    },
-    {
-      "details": [
-        {
-          "ProductId": 2,
-          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
-          "quantity": 5
-        }
-      ],
-      "orderID": 8,
-      "id": 8
-    },
-    {
-      "details": [
-        {
-          "ProductId": 2,
-          "productName": "Hackeando el cerebro de tus compradores: PsychoGrowth",
-          "quantity": 1
-        }
-      ],
-      "orderID": 9,
-      "id": 9
-    },
-    {
-      "details": [
-        {
-          "ProductId": 4,
-          "productName": "SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter",
-          "quantity": 1
-        },
-        {
-          "ProductId": 6,
-          "productName": "CL3 Rated High-Speed 4K HDMI Cable - 6 Feet",
-          "quantity": 1
-        }
-      ],
-      "orderID": 2,
-      "id": 10
-    },
-    {
-      "details": [
-        {
-          "ProductId": 3,
-          "productName": "Angular Routing: Learn To Create client-side and SPA with Routing and Navigation",
-          "quantity": 1
-        },
-        {
-          "ProductId": 5,
-          "productName": "GoPro HERO9 Black - Waterproof Action Camera with Front LCD",
-          "quantity": 1
-        },
-        {
-          "ProductId": 6,
-          "productName": "CL3 Rated High-Speed 4K HDMI Cable - 6 Feet",
-          "quantity": 1
-        }
-      ],
-      "orderID": 3,
-      "id": 11
     }
   ]
 }
